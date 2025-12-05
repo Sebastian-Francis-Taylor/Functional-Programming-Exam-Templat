@@ -1,0 +1,48 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[english]{babel}
+\input{packages}
+
+\pagestyle{fancy}
+
+% Edit Student Number here
+\newcommand{\myname}{YOUR NAME HERE}
+\newcommand{\mystudentid}{YOUR STUDNET ID HERE}
+
+\author{\myname}
+\lhead{\myname \\ \mystudentid}
+\rhead{Functional Programming (02157) \\ Winter Exam 2025}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+
+\thispagestyle{fancy}
+
+% Edit names of documents that you import
+\section*{Question 1}
+\lstinputlisting{Code/Question1.fsx}
+\begin{verbatim}
+    
+// 1.1
+let foo = printfn "bar"
+
+// 1.2
+let myFunction = printfn "Hello Exam time"
+
+
+let test x =
+    match x with
+    | 1 -> printfn "foo"
+    | _ -> printfn "bar"
+\end{verbatim}
+\section*{Question 2}
+\lstinputlisting{Code/Question2.fsx}
+\section*{Question 3}
+\lstinputlisting{Code/Question3.fsx}
+\section*{Question 4}
+\lstinputlisting{Code/Question4.fsx}
+\section*{Question 5}
+\lstinputlisting{Code/Question5.fsx}
+
+\end{document}
